@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Text} from '@fabulas/astly';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export const Bio = props => {
   return (

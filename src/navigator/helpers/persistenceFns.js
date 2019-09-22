@@ -2,7 +2,6 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 const persistenceKey = 'persistenceKey1';
 const persistNavigationState = async navState => {
-  console.log('CURRENT NAV STATE:', navState);
   try {
     await AsyncStorage.setItem(persistenceKey, JSON.stringify(navState));
   } catch (err) {
