@@ -12,6 +12,7 @@ const PhotoGrid = props => {
   function renderPhoto(photo, index) {
     return photo ? (
       <TouchableOpacity
+        key={photo.id}
         onPress={() => props.navigation.navigate('Pics', {photos, index})}>
         <Image style={styles.image} source={{uri: photo.urls.thumb}} />
       </TouchableOpacity>
